@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-//        task1();
-//        task2();
-//        task3();
-//        task4();
+        task1();
+        task2();
+        task3();
+        task4();
         task5();
     }
     static void task1(){
@@ -76,6 +76,7 @@ public class Main {
             }
             System.out.print(oneTwoThree[i] + ", ");
         }
+        System.out.print("\n\n");
 
     }
     static void task5(){
