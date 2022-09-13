@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
-        task2();
-        task3();
-        task4();
+//        task1();
+//        task2();
+//        task3();
+//        task4();
+        task5();
     }
     static void task1(){
         int [] oneTwoThree = new int[3];
@@ -77,4 +78,26 @@ public class Main {
         }
 
     }
-}
+    static void task5(){
+
+        int [][]matrix = new int[3][3];
+        int diagonal = 4;
+        for(int rowIndex=0;rowIndex<matrix.length;rowIndex++){
+            for (int columnIndex=0;columnIndex<matrix.length;columnIndex++){
+                if (rowIndex%2==0 && columnIndex%2==0 || rowIndex%2!=0 && columnIndex%2!=0){
+                    matrix[rowIndex][columnIndex]=diagonal;
+                }
+            }
+        }
+        for (int[] row : matrix) {
+            for (int column : row) {
+                System.out.print(column + " ");
+            }
+            System.out.println();
+        }
+        }
+
+
+
+
+    }
